@@ -56,7 +56,7 @@ Nota: por favor utiliza swapi.tech y no swapi.dev porque la segunda esta dando p
 
 ***Importante 2***: no te preocupes si los datos que obtienes de la SWAPI no coinciden con los datos que ves en starwars.com.
 
-Usa toda la información que entrega la por el SWAPI (verifica los documentos y / o las respuestas de json).
+Usa toda la información que entrega la SWAPI (verifica los documentos y / o las respuestas de json).
 
 ## Leer más tarde o la funcionalidad de favoritos
 
