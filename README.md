@@ -47,7 +47,7 @@ Note: Please use https://www.swapi.tech/ instead of https://swapi.dev/ because t
    <img height="100" src="https://raw.githubusercontent.com/nachovz/projects/master/p/javascript/semi-senior/startwars-blog-reading-list/sw_data_details.png" />
 </p>
 
-***Important***: The SWAPI doesn't provide the images, you can use https://starwars-visualguide.com/assets/img/ to get the images easily. The focus of this exercise is to practice *fetch*, *router* and *context*; you can focus on the color theme and simple layout to make it look good.
+***Important***: The SWAPI doesn't provide the images, you can use https://starwars-visualguide.com/#/ to get the images easily. The focus of this exercise is to practice *fetch*, *router* and *context*; you can focus on the color theme and simple layout to make it look good.
 
 ***Important 2***: Don't worry if the data you get from the SWAPI doesn't match the data you see in starwars.com.
 
