@@ -1,75 +1,103 @@
-<!--hide-->
-# Starwars Blog Reading List
-<!--endhide-->
-
-_The force is strong with this exercise..._
-
-We are going to be building a minimalist version of the [Star Wars Databank](https://www.starwars.com/databank) with a "Read Later" or "Favorites" list functionality.
-
-### Here is a Demo!
-
-![Starwars Demo](https://github.com/breatheco-de/exercise-starwars-blog-reading-list/blob/master/preview.gif?raw=true)
-
-## 🌱  How to start this project
-
-Do not clone this repository because we are going to be using a different template.
-
-We recommend opening the ` react flux boilerplate` using a provisioning tool like [Codespaces](https://4geeks.com/lesson/what-is-github-codespaces) (recommended) or [Gitpod](https://4geeks.com/lesson/how-to-use-gitpod). Alternatively, you can clone it on your local computer using the `git clone` command.
-
-This is the repository you need to open or clone:
-
-```
-https://github.com/4GeeksAcademy/react-hello-webapp
-```
-
-**👉 Please follow these steps on** [how to start a coding project](https://4geeks.com/lesson/how-to-start-a-project).
-
-💡 Important: Remember to save and upload your code to GitHub by creating a new repository, updating the remote (`git remote set-url origin <your new url>`), and uploading the code to your new repository using the `add`, `commit` and `push` commands from the git terminal.
-
-## 📝 Instructions
-
-1. Use Bootstrap components, you need **almost** no custom CSS.
-2. Take some time to understand the SWAPI.tech API, this will be our source of information, we will be consuming this API.
-3. Fetch the SWAPI people, vehicles and planets, and display them on your application.
-4. Declare a `favorites` array in your central store and allow the user to add or remove favorites.
-
-#### Building the grid of Characters and Planets
-
-- Create a React webapp that lists the _people_, _vehicles_ and _planets_ **entities** provided by the [SWAPI](https://www.swapi.tech/documentation).
-
-Note: Please use https://www.swapi.tech/ instead of https://swapi.dev/ because the second one is causing problems.
+# WebApp boilerplate with React JS
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/react-hello-webapp.git)
 
 <p align="center">
-   <img height="100" src="https://raw.githubusercontent.com/nachovz/projects/master/p/javascript/semi-senior/startwars-blog-reading-list/sw_data.png" />
+<a href="https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b"><img src="https://github.com/4GeeksAcademy/react-hello-webapp/blob/master/src/img/how-to.png?raw=true" /></a>
 </p>
 
-#### Building a "Details" view for Character or Planet
 
-- Each entity should have a short description (Bootstrap Card) and a "Details" view (Bootstrap components):
+### Requirements:
+- Make sure you are using node version 10
 
-<p align="center">
-   <img height="100" src="https://raw.githubusercontent.com/nachovz/projects/master/p/javascript/semi-senior/startwars-blog-reading-list/sw_data_details.png" />
-</p>
+1. Install the packages:
+```
+$ npm install
+```
+2. Create a .env file:
+```
+$ cp .env.example .env
+```
+3. Start coding! and the webpack dev server with live reload, for windows, mac, linux or Gitpod:
 
-***Important***: The SWAPI doesn't provide the images, you can use https://starwars-visualguide.com/assets/img/ to get the images easily. The focus of this exercise is to practice *fetch*, *router* and *context*; you can focus on the color theme and simple layout to make it look good.
+```bash
+$ npm run start
+```
 
-***Important 2***: Don't worry if the data you get from the SWAPI doesn't match the data you see in starwars.com.
+### Styles
+You can update the `styles/index.css` or create new `.css` files inside `styles/` and import them into your current scss or js files depending on your needs.
 
-Use all the information provided by the SWAPI (check the docs and/or the json responses).
+### Components
+Add more files into your `./src/js/components` or styles folder as you need them and import them into your current files as needed.
 
-## Read Later or Favorites functionality
+**Note (New changes)**: Components have been converted into functions to support the use of hooks:
+* Instead of a class component, we're using a `const` function.
+* Class `constructor` and `state` have been replaced by `useState()` hooks.
+* `componentDidMount()` was replaced by `useEffect({}, [])` - It runs at mount thanks to the second parameter (`[]`).
+* `Actions` and `Store` still work the same way.
 
-Implement a "Read Later" functionality, i.e, a button that allows the user to "save" the item (character, vehicle or planet) into a special list. This list will be shown at the bottom of the home page, it resembles the main list but only shows the "saved" elements.
+```jsx
+// Previous "Class Oriented"
+export class Demo extends React.Component {
+	constructor(props) {
+		super(props);
 
-#### Use the Context
+		this.state = getState('code here');
+	}
+}
 
-To ensure that the user can "save" the item, you must implement an action that can be accessible from anywhere within the app.
+// New "Functional Oriented"
+export const Demo = () => (
+	const [state, setState] = getState('code here'); //using the state (if needed)
+  const { store, actions } = useContext(Context); // using the context (if needed)
 
-## 😎 Feeling Confident?
+);
+```
 
-The following features are not needed for the final solution, but you can develop them if you feel confident enough:
+💡Note: There is an example using the Context API inside `views/demo.js`;
 
-- `+1` Prevent the website from fetching the Startwars API again if refreshed (you can use the localstorage to save the store on the local browser).
-- `+3` Implement a search bar with autocomplete for Characters and Planets. When the autocomplete is clicked it should take you to the Character or Planet page.
+### Views (Components)
+Add more files into your `./src/js/views` and import them in `./src/js/layout.jsx`.
 
-This and many other projects are built by students as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
+### Context
+This boilerplate comes with a centralized general Context API. The file `./src/js/store/flux.js` has a base structure for the store, we encourage you to change it and adapt it to your needs.
+
+React Context [docs](https://reactjs.org/docs/context.html)
+BreathCode Lesson [view](https://content.breatheco.de/lesson/react-hooks-explained)
+
+The `Provider` is already set. You can consume from any component using the useContext hook to get the `store` and `actions` from the Context. Check `/views/demo.js` to see a demo.
+
+```jsx
+import { Context } from "../store/appContext";
+const MyComponentSuper = () => {
+  //here you use useContext to get store and actions
+  const { store, actions } = useContext(Context);
+  return <div>{/* you can use your actions or store inside the html */}</div>
+}
+```
+
+## Publish your website!
+
+1. **Vercel:** The FREE recomended hosting provider is [vercel.com](https://vercel.com/), you can deploy in 1 minutes by typing the following 2 commands:
+
+Login (you need to have an account):
+```sh
+$ npm i vercel -g && vercel login
+```
+Deploy:
+```sh
+$ vercel --prod
+```
+✎ Note: If you don't have an account just go to vercel.com, create a account and come back here.
+
+![Vercel example procedure to deploy](https://github.com/4GeeksAcademy/react-hello-webapp/blob/4b530ba091a981d3916cc6e960e370decaf2e234/docs/deploy.png?raw=true)
+
+2. **Github Pages:** This boilerplate is 100% compatible with the free github pages hosting.
+To publish your website you need to push your code to your github repository and run the following command after:
+```sh
+$ npm run deploy
+```
+Note: You will need to [configure github pages for the branch gh-pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages)
+
+## Contributors
+
+This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
