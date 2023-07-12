@@ -1,0 +1,17 @@
+/*
+    General Styles
+*/
+.drp {
+    display: inline;
+}
+
+.toggle {
+    width: max-content;
+}
+
+.counter {
+    background-color: grey;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 3px;
+}

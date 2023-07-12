@@ -1,0 +1,15 @@
+.heading {
+    color: rgb(4, 0, 255);
+}
+
+.card {
+    width: 20rem;
+}
+
+.likeBtn {
+    float: right;
+}
+
+.overFlow {
+    overflow: auto;
+}
