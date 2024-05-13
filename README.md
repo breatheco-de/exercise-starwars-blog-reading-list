@@ -1,5 +1,5 @@
 <!--hide-->
-# Starwars Blog Reading List
+# Star Wars Blog Reading List
 <!--endhide-->
 
 *The force is strong with this exercise...*
@@ -69,7 +69,7 @@ To ensure that the user can "save" the item, you must implement an action that c
 
 The following features are not needed for the final solution, but you can develop them if you feel confident enough:
 
-- `+1` Prevent the website from fetching the Startwars API again if refreshed (you can use the `localStorage` to save the store on the local browser).
+- `+1` Prevent the website from fetching the Star Wars API again if refreshed (you can use the `localStorage` to save the store on the local browser).
 - `+3` Implement a search bar with autocomplete for characters, planets, and vehicles. When the autocomplete is clicked it should take you to the detailed page of the element.
 
 This and many other projects are built by students as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
