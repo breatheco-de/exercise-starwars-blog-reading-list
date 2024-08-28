@@ -2,7 +2,7 @@
 # Lista de Lectura del Blog de Starwars
 <!--endhide-->
 
-*La fuerza es fuerte en este ejercicio...*
+*Que la fuerza de acompañe...*
 
 Vamos a construir una versión minimalista del [Banco de datos de Star Wars](https://www.starwars.com/databank) con una funcionalidad de "Read later" o "favoritos".
 
