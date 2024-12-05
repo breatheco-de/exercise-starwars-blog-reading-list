@@ -7,6 +7,7 @@
 	"preview": "https://github.com/breatheco-de/exercise-starwars-blog-reading-list/blob/master/preview.gif?raw=true",
 	"technologies": ["react.js", "javascript", "react router"],
 	"duration" : 16,
+	"template_url": "https://github.com/4GeeksAcademy/react-hello-webapp",
 	"description" : "Create a simple to-read website for Star Wars fans. Use the SWAPI to fetch and React + React Router + Context to save the reading list.",
 	"talents": [
 		{ "badge": "tag-master", "points": 10 }
