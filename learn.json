@@ -1,5 +1,6 @@
 {
-	"title" : {
+    "gitpod": true,
+    "title" : {
     "us": "Starwars blog reading list",
     "es": "Blog de Starwars"
 },
