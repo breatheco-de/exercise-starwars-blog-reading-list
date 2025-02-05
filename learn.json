@@ -11,6 +11,7 @@
 	"preview": "https://github.com/breatheco-de/exercise-starwars-blog-reading-list/blob/master/preview.gif?raw=true",
 	"technologies": ["react.js", "javascript", "react router"],
 	"duration" : 16,
+	"template_url": "https://github.com/4GeeksAcademy/react-hello-webapp",
 	"description" : {
     "us": "Build a Star Wars reading app with React.js, React Router, and Context API. Learn API integration with SWAPI, state management, and routing. Implement a 'Read Later' feature to save favorites. Master asynchronous requests and global state handling for an optimized user experience. Perfect for React developers!",
     "es": "Crea una aplicación de lectura de Star Wars con React.js, React Router y Context API. Aprende integración de API con SWAPI, gestión de estado y enrutamiento. Implementa una función de 'Leer después' para guardar favoritos. Domina las solicitudes asíncronas y el manejo del estado global."
