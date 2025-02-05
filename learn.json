@@ -1,5 +1,9 @@
 {
-	"title" : "Starwars blog reading list",
+	"gitpod": true,
+	"title" : {
+    "us": "Starwars blog reading list",
+    "es": "Blog de Starwars"
+},
 	"slug" : "starwars-blog-reading-list",
 	"status": "published",
 	"difficulty": "intermediate",
@@ -8,10 +12,16 @@
 	"technologies": ["react.js", "javascript", "react router"],
 	"duration" : 16,
 	"template_url": "https://github.com/4GeeksAcademy/react-hello-webapp",
-	"description" : "Create a simple to-read website for Star Wars fans. Use the SWAPI to fetch and React + React Router + Context to save the reading list.",
+	"description" : {
+    "us": "Build a Star Wars reading app with React.js, React Router, and Context API. Learn API integration with SWAPI, state management, and routing. Implement a 'Read Later' feature to save favorites. Master asynchronous requests and global state handling for an optimized user experience. Perfect for React developers!",
+    "es": "Crea una aplicación de lectura de Star Wars con React.js, React Router y Context API. Aprende integración de API con SWAPI, gestión de estado y enrutamiento. Implementa una función de 'Leer después' para guardar favoritos. Domina las solicitudes asíncronas y el manejo del estado global."
+},
 	"talents": [
 		{ "badge": "tag-master", "points": 10 }
 	],
     "autoPlay": false,
-    "projectType": "project"
+    "projectType": "project",
+    "telemetry": {
+    "batch": "https://breathecode.herokuapp.com/v1/assignment/me/telemetry?asset_id=173"
+}
 }
