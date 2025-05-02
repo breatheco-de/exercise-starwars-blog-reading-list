@@ -55,11 +55,27 @@ https://github.com/4GeeksAcademy/react-hello-webapp
    <img height="400" src="https://raw.githubusercontent.com/nachovz/projects/master/p/javascript/semi-senior/startwars-blog-reading-list/sw_data_details.png" />
 </p>
 
-***Importante***: La SWAPI no proporciona las imágenes, pero puedes usar https://starwars-visualguide.com para obtener las imágenes. El enfoque de este ejercicio es practicar *fetch*, *router* y *context*. También puedes enfocarte en una paleta de colores y diseño simple para que se vea bien.
-
 ***Importante 2***: no te preocupes si los datos que obtienes de la SWAPI no coinciden con los datos que ves en starwars.com.
 
 Usa toda la información que proporciona la SWAPI (verifica la documentación y/o las respuestas JSON).
+
+Aquí tienes la traducción al español del texto en Markdown:
+
+### Sobre las imágenes:
+
+La siguiente URL puede proporcionarte cualquier imagen que quieras incluir en el proyecto; solo necesitas conocer el ID del planeta, personaje o vehículo, y puedes usar la siguiente URL como plantilla:
+
+```text
+https://github.com/breatheco-de/swapi-images/blob/master/public/images/planets/11.jpg?raw=true
+```
+
+Solo asegúrate de reemplazar `planets` y `id` con el tipo e ID reales que deseas, por ejemplo:
+
+```text
+https://github.com/breatheco-de/swapi-images/blob/master/public/images/people/1.jpg?raw=true
+```
+
+El objetivo de este ejercicio es practicar *fetch*, *router* y *context*. También puedes enfocarte en el tema de colores y un diseño sencillo para que se vea bien.
 
 ### Funcionalidad "Read later" o "Favoritos"
 
