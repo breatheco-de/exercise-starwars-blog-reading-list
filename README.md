@@ -41,7 +41,7 @@ https://github.com/4GeeksAcademy/react-hello-webapp
 
 - Create a React webapp that lists the *people*, *vehicles* and *planets* entities provided by the [SWAPI](https://www.swapi.tech/documentation).
 
-> Note: Please use https://www.swapi.tech/ instead of https://swapi.dev/ because the second one is causing problems.
+> Note: If you are having trouble with Swapi.Tech, you can try Swapi.dev, Swapi.info or just google swapi and you will find many other APIs with the same format.
 
 <p align="center">
    <img height="400" src="https://raw.githubusercontent.com/nachovz/projects/master/p/javascript/semi-senior/startwars-blog-reading-list/sw_data.png" />
@@ -55,7 +55,21 @@ https://github.com/4GeeksAcademy/react-hello-webapp
    <img height="400" src="https://raw.githubusercontent.com/nachovz/projects/master/p/javascript/semi-senior/startwars-blog-reading-list/sw_data_details.png" />
 </p>
 
-***Important***: The SWAPI doesn't provide the images, you can use https://starwars-visualguide.com to get the images easily. The focus of this exercise is to practice *fetch*, *router*, and *context*. Also, you can focus on the color theme and a simple layout to make it look good.
+### About the images:
+
+The following URL can provide you with any image you want to include in the project, you just have to know the plant, character, vehicle id, and you can use the following URL as a template:
+
+```text
+https://github.com/breatheco-de/swapi-images/blob/master/public/images/planets/11.jpg?raw=true
+```
+
+Just make sure to replace `planets` and `id` with the actual type and ID that you want, for example:
+
+```text
+https://github.com/breatheco-de/swapi-images/blob/master/public/images/people/1.jpg?raw=true
+```
+
+The focus of this exercise is to practice *fetch*, *router*, and *context*. Also, you can focus on the color theme and a simple layout to make it look good.
 
 ***Important 2***: Don't worry if the data you get from the SWAPI doesn't match the data you see in starwars.com.
 
