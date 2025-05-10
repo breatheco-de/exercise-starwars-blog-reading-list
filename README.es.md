@@ -1,5 +1,5 @@
 <!--hide-->
-# Lista de Lectura del Blog de Starwars
+# Lista de Lectura del Blog de Star Wars
 <!--endhide-->
 
 *La fuerza es fuerte en este ejercicio...*
